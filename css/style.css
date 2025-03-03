@@ -119,8 +119,6 @@ footer {
     display: flex;
 }
 
-
-
 .footer_url ul :hover {
     color: goldenrod;
 }
@@ -132,10 +130,7 @@ footer {
     display: flex;
     align-content: flex-start;
     margin-bottom: 0;
-
-
 }
-
 
 /* ahora vamos a dar estilo a cada ventana (html)*/
 /*EMPEZAMOS POR EL INDEX*/
@@ -161,15 +156,12 @@ ul li a.under_cartelera {
 }
 
 .cartelera_opciones {
-
     padding: 20px;
     font-family: Montserrat;
-
 }
 
 /*creando un grid para la cartelera*/
 .imagenes_cartelera {
-
     display: grid;
     width: 1000px;
     object-fit: cover;
@@ -246,9 +238,6 @@ ul li a.under_cartelera {
     background-color: white;
     margin: 10px;
     width: 200px;
-
-
-
 }
 
 /*vamos a darle estilos a trailers.index*/
@@ -257,34 +246,22 @@ ul li a.under_trailer {
     color: rgb(49, 49, 49);
 }
 
-
-
-
 .peliculas {
-
     display: flex;
     align-items: center;
     margin-left: 200px;
     margin-top: 20px;
     margin-bottom: 10px;
-
 }
 
 iframe {
     margin-right: 15px;
-
-
-
-
 }
 
-
 .peliculas_texto {
-
     width: 400px;
     color: white;
     font-family: Montserrat;
-
 }
 
 .peliculas_texto h2 {
@@ -402,12 +379,12 @@ ul li a.under_conocenos {
     display: none;
 }
 
+/*el responsive una media que es una tablet*/
 @media screen and (max-width: 1024px) {
 
     /* media para  el index*/
     nav {
         margin-top: 20px;
-
     }
 
     nav ul li {
@@ -433,7 +410,6 @@ ul li a.under_conocenos {
         flex-wrap: wrap;
         justify-content: center;
         padding: 30px;
-
     }
 
     .prox_estrenos img {
@@ -456,18 +432,14 @@ ul li a.under_conocenos {
 
     /*estilos para el footer*/
     .contenido_footer {
-
         display: flex;
         display: block;
         justify-content: center;
         align-items: center;
-
         text-align: center;
-
     }
 
     .iconos_sociales h3 {
-
         display: flex;
         justify-content: center;
         margin-left: 40px;
@@ -475,10 +447,7 @@ ul li a.under_conocenos {
 
     .iconos_sociales .url img {
         height: 30px;
-
         text-align: center;
-
-
     }
 
     .iconos_sociales p {
@@ -489,10 +458,7 @@ ul li a.under_conocenos {
     .footer_url ul li {
         display: flex;
         display: block;
-
         text-align: center;
-
-
     }
 
     /*media para lA CARTELERA*/
@@ -502,12 +468,10 @@ ul li a.under_conocenos {
     }
 
     .imagenes_cartelera {
-
         display: grid;
         width: 0;
         object-fit: cover;
         margin-left: 60px;
-
     }
 
     .cartelera_1 {
@@ -581,9 +545,6 @@ ul li a.under_conocenos {
         background-color: white;
         margin: 10px;
         width: 200px;
-
-
-
     }
 
     /*formato media para trialers*/
@@ -599,21 +560,16 @@ ul li a.under_conocenos {
 
     .peliculas_texto h2 {
         width: 560px;
-
     }
 
     .peliculas_texto p {
         width: 560px;
-
-
     }
 
     /*media para candy*/
 
     .promo {
         margin-left: 10%;
-
-
     }
 
     .promo h2 {
@@ -667,6 +623,7 @@ ul li a.under_conocenos {
     }
 }
 
+/*media para un telefono*/
 @media screen and (max-width: 768px) {
     /*poner el bootstrap y sacar el header mio*/
 
@@ -718,8 +675,6 @@ ul li a.under_conocenos {
         background-color: #F8F9FA;
         border-radius: 0;
         padding: 15px;
-
-
     }
 
     .navbar {
@@ -750,27 +705,15 @@ ul li a.under_conocenos {
 
     /*index*/
     .carousel.slide {
-
-
         margin-bottom: 20px;
-
     }
 
     .contenido_footer {
-
         display: flex;
         display: block;
-
-
-
-
-
-
     }
 
     .iconos_sociales h3 {
-
-
         margin-left: auto;
         margin-right: auto;
     }
@@ -778,38 +721,23 @@ ul li a.under_conocenos {
     .iconos_sociales .url img {
         height: 40px;
         margin-right: 20px;
-
-
     }
-
-
-
 
     .footer_url ul li {
         margin-right: 20px;
         text-align: center;
-
-
-
     }
 
     .imagenes_cartelera {
-     
-        
+        /*dandole estilo a cartelera.index*/
         display: block;
         justify-content: center;
-       margin-left: 150px;
-        
-        
-       
-        
+        margin-left: 150px;
     }
-    
 
+    /*estilo a trilers*/
     .peliculas {
         display: block;
-
-
         justify-items: center;
         margin: 15px;
     }
@@ -820,16 +748,15 @@ ul li a.under_conocenos {
 
     .peliculas_texto h2 {
         width: 350px;
-justify-items: center;
-margin: auto;
+        justify-items: center;
+        margin: auto;
     }
 
     .peliculas_texto p {
         width: 350px;
-
-margin: auto;
+        margin: auto;
     }
-
+/*dando estilo a candy.index*/
     .promo {
         display: block;
         justify-content: center;
@@ -838,15 +765,11 @@ margin: auto;
     .promo h2 {
         width: 320px;
         margin-left: 0;
-
         text-align: center;
     }
 
     .promo img {
         height: 180px;
-
-
-
     }
 
     .candy {
@@ -856,14 +779,13 @@ margin: auto;
     .candy h2 {
         width: 320px;
         margin-left: 0;
-
         text-align: center;
     }
 
     .candy img {
         height: 180px;
     }
-
+/*dando estilo a conocenos.index*/
     .mapas {
         margin: 5px;
     }
