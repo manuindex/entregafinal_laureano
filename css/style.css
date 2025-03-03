@@ -732,34 +732,35 @@ ul li a.under_conocenos {
         /*dandole estilo a cartelera.index*/
         display: block;
         justify-content: center;
-        margin-left: 100px;
+        margin-left: 90px ;
     }
 
     /*estilo a trilers*/
     .peliculas {
         display: block;
         justify-items: center;
-        margin: 15px;
+        margin: 10px;
     }
 
     .peliculas iframe {
-        width: 350px;
+        width: 320px;
     }
 
     .peliculas_texto h2 {
-        width: 350px;
+        width: 320px;
         justify-items: center;
-        margin: auto;
+        margin-left: 30px;
     }
 
     .peliculas_texto p {
-        width: 350px;
-        margin: auto;
+        width: 320px;
+        margin-left: 30px;
     }
 /*dando estilo a candy.index*/
     .promo {
         display: block;
         justify-content: center;
+        margin: 15px;
     }
 
     .promo h2 {
@@ -774,6 +775,8 @@ ul li a.under_conocenos {
 
     .candy {
         display: block;
+        justify-content: center;
+        margin: 15px;
     }
 
     .candy h2 {
@@ -791,8 +794,11 @@ ul li a.under_conocenos {
     }
 
     .mapas iframe {
-        width: 380px;
-        margin-left: 0;
+        width: 320px;
+        margin: 15px;
+    }
+    .beneficios {
+        margin-left: 20px;
     }
 
     .beneficios img {
