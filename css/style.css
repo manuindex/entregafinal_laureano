@@ -158,86 +158,27 @@ ul li a.under_cartelera {
 .cartelera_opciones {
     padding: 20px;
     font-family: Montserrat;
+    justify-items: center;
 }
 
 /*creando un grid para la cartelera*/
-.imagenes_cartelera {
+ .imagenes_cartelera {
     display: grid;
-    width: 1000px;
-    object-fit: cover;
-}
+    grid-template-columns: repeat(4, 240px);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center; 
+ }
 
-.cartelera_1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-.cartelera_2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-
-.cartelera_3 {
-    grid-column: 3/4;
-    grid-row: 1/2;
-
-}
-
-.cartelera_4 {
-    grid-column: 4/5;
-    grid-row: 1/2;
-}
-
-.cartelera_5 {
-    grid-column: 5/6;
-    grid-row: 1/2;
-}
-
-.cartelera_6 {
-    grid-column: 6/7;
-    grid-row: 1/2;
-}
-
-.cartelera_7 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-
-.cartelera_8 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-
-.cartelera_9c {
-    grid-column: 3/4;
-    grid-row: 2/3;
-}
-
-.cartelera_10 {
-    grid-column: 4/5;
-    grid-row: 2/3;
-}
-
-.cartelera_11 {
-    grid-column: 5/6;
-    grid-row: 2/3;
-}
-
-.cartelera_12 {
-    grid-column: 6/7;
-    grid-row: 2/3;
-}
-
-.imagenes_cartelera img {
-    margin: 12px;
-
-}
+ 
 
 .imagenes_cartelera div h4 {
     text-align: center;
     background-color: white;
-    margin: 10px;
+    
+    
+    
     width: 200px;
+    justify-content: center;
 }
 
 /*vamos a darle estilos a trailers.index*/
@@ -464,86 +405,22 @@ ul li a.under_conocenos {
     /*media para lA CARTELERA*/
 
     .cartelera_opciones {
-        margin-left: 60px;
+      
+        
+       justify-items: center;
     }
 
     .imagenes_cartelera {
         display: grid;
-        width: 0;
-        object-fit: cover;
-        margin-left: 60px;
-    }
-
-    .cartelera_1 {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-
-    .cartelera_2 {
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-
-    .cartelera_3 {
-        grid-column: 3/4;
-        grid-row: 1/2;
-
-    }
-
-    .cartelera_4 {
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-
-    .cartelera_5 {
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-
-    .cartelera_6 {
-        grid-column: 3/4;
-        grid-row: 2/3;
-    }
-
-    .cartelera_7 {
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-
-    .cartelera_8 {
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-
-    .cartelera_9c {
-        grid-column: 3/4;
-        grid-row: 3/4;
-    }
-
-    .cartelera_10 {
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-
-    .cartelera_11 {
-        grid-column: 2/3;
-        grid-row: 4/5;
-    }
-
-    .cartelera_12 {
-        grid-column: 3/4;
-        grid-row: 4/5;
-    }
-
-    .imagenes_cartelera img {
-        margin: 10px;
-
-    }
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: repeat(3, 1fr);
+        justify-content: center; 
+     }
 
     .imagenes_cartelera div h4 {
         text-align: center;
         background-color: white;
-        margin: 10px;
+       justify-content: center;
         width: 200px;
     }
 
@@ -727,14 +604,17 @@ ul li a.under_conocenos {
         margin-right: 20px;
         text-align: center;
     }
+/*dandole estilo a cartelera.index*/
+
 
     .imagenes_cartelera {
-        /*dandole estilo a cartelera.index*/
+        
         display: block;
-        justify-content: center;
-        margin-left: 90px ;
+        justify-items: center;
     }
-
+    .imagenes_cartelera div h4 {
+        justify-content: center;
+    }
     /*estilo a trilers*/
     .peliculas {
         display: block;
