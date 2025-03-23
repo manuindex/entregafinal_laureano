@@ -1,0 +1,20 @@
+{
+  "name": "carpeta.git",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manuindex/preentrega2_laureano.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manuindex/preentrega2_laureano/issues"
+  },
+  "homepage": "https://github.com/manuindex/preentrega2_laureano#readme",
+  "description": ""
+}
