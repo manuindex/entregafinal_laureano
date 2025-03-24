@@ -1,0 +1,554 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@import 'cartelera';
+@import 'trailers';
+@import 'candy';
+@import 'conocenos';
+
+$fuente: Montserrat;
+$bcolor: brown;
+$hover: yellow;
+$bcolor_subtitulo: goldenrod;
+$color_letra: white;
+$rojo_letra: rgb(192, 66, 66);
+
+@mixin flex ($direction, $jcontent, $aitems) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $jcontent;
+    align-items: $aitems;
+}
+
+body {
+    background-image: url(../imagenes/sala.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: $fuente;
+}
+
+a {
+    /*modificando todas las url */
+    text-decoration: none;
+    color: rgb(253, 249, 249);
+    font-family: $fuente;
+    line-height: 2;
+    text-align: center;
+    padding-right: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    border-color: black;
+    border-radius: 10px;
+
+}
+
+.header_mio {
+    .logo {
+        /* esto es para centrar tanto el logo como el h1*/
+        @include flex(row, none, center);
+
+        a {
+
+            @include flex(row, none, center);
+
+            img {
+                /* para achicar la foto*/
+                height: 47px;
+                margin-right: 0px;
+            }
+
+            h1 {
+                /*decorando el H1 */
+                width: 300px;
+                background-color: rgb(255, 255, 255);
+                color: brown;
+                font-family: $fuente;
+                font-size: 39px;
+                font-weight: 700;
+                margin: 0;
+            }
+        }
+    }
+
+    a .login {
+        /*estilos en el boton de LOGIN*/
+        font-size: 15px;
+        font-weight: 700;
+        padding: 10px 20px;
+        color: goldenrod;
+    }
+}
+
+header {
+    .header_mio {
+        font-family: $fuente;
+        @include flex(row, space-between, center);
+        height: 75px;
+        background-color: $bcolor;
+        padding: 10px;
+
+        ul li :hover {
+            /*darle color a la url si el mause lo toca*/
+            color: $hover;
+        }
+    }
+}
+
+ul li {
+    /* que los ul esten al lado no en orden*/
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 15px;
+
+}
+
+main {
+    .h2_index {
+        color: $color_letra;
+        background-color: $bcolor_subtitulo;
+        width: 300px;
+        font-family: $bcolor;
+        font-size: 25px;
+        font-weight: 700;
+        margin: 12px;
+    }
+
+    .prox_estrenos {
+        margin-left: 3px;
+        margin-bottom: 10px;
+    }
+}
+
+footer {
+    font-family: $fuente;
+    background-color: $bcolor;
+    padding: 80px 0;
+    color: $color_letra;
+    @include flex(row, space-between, center);
+    padding: 10px;
+    position: relative;
+
+    .contenido_footer {
+        @include flex(row, space-between, center);
+
+        .iconos_sociales {
+
+
+            li a img {
+
+                height: 25px;
+                padding: 0 10px;
+                display: flex;
+                align-content: flex-start;
+                margin-bottom: 0;
+            }
+
+            h3 {
+                padding: 10px;
+                font-family: $fuente;
+                background-position: 0 20px;
+            }
+
+            p {
+                text-align: center center;
+                font-size: medium;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.footer_url ul :hover {
+    color: $hover
+}
+
+@media screen and (max-width: 1024px) {
+
+    /* media para  el index*/
+    /*mpdificando el header para que entre en una tablet*/
+    .header_mio {
+        h1 {
+            width: 280px;
+        }
+
+        nav {
+            margin-top: 20px;
+
+            ul li {
+                display: inline;
+
+                a {
+                    text-align: center;
+                    padding-right: 15px;
+                }
+            }
+        }
+
+        a .login {
+            margin-right: 20px;
+        }
+    }
+
+    main {
+        .h2_index {
+            padding: 10px;
+            margin-left: 28px;
+            margin-bottom: 0;
+            display: inline;
+        }
+
+        .prox_estrenos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 30px;
+
+            img {
+                height: 370px;
+                margin: 15px;
+            }
+        }
+
+    }
+
+    /*estilos para el footer*/
+    .contenido_footer {
+        @include flex(row, center, center);
+        text-align: center;
+
+        .iconos_sociales {
+            h3 {
+                @include flex(row, center, none);
+                margin-left: 40px;
+            }
+
+            .url img {
+                height: 30px;
+                text-align: center;
+            }
+
+            p {
+                @include flex(row, center, none);
+            }
+        }
+
+        .footer_url ul li {
+            display: flex;
+            display: block;
+            text-align: center;
+        }
+    }
+
+    /* media para lA CARTELERA*/
+
+    .cartelera_opciones {
+        justify-items: center;
+    }
+
+    .imagenes_cartelera {
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: repeat(3, 1fr);
+        justify-content: center;
+
+        h4 {
+            text-align: center;
+            background-color: $color_letra;
+            justify-content: center;
+            width: 200px;
+        }
+    }
+
+    /*formato media para trialers*/
+    main {
+        .peliculas {
+            display: block;
+            margin-left: 140px;
+
+            .peliculas_texto {
+                margin-bottom: 40px;
+                text-align: start;
+
+                h2 {
+                    width: 560px;
+                }
+
+                p {
+                    width: 560px;
+                }
+            }
+
+        }
+    }
+
+    /*media para candy*/
+    main {
+        .promo {
+            margin-left: 10%;
+
+            h2 {
+                width: 550px;
+                padding: 10px;
+                margin: 20px;
+            }
+
+            img {
+                margin-left: 140px;
+                height: 350px;
+            }
+        }
+
+        .candy {
+            margin-left: 10%;
+
+            h2 {
+                width: 550px;
+                padding: 10px;
+                margin: 20px;
+            }
+
+            img {
+                margin-left: 140px;
+                height: 350px;
+            }
+        }
+    }
+
+
+    /*media para conocenos*/
+    main {
+        .conocenos {
+            margin: 10px;
+        }
+
+        .mapas {
+            display: flex;
+            display: block;
+            margin-left: 120px;
+
+            iframe {
+                margin-bottom: 15px;
+                margin-top: 10px;
+            }
+        }
+
+        .beneficios {
+            margin-left: 10%;
+        }
+    }
+
+}
+
+.fixed-top {
+    display: none;
+}
+
+/*media para un telefono*/
+@media screen and (max-width: 768px) {
+    header {
+        .header_mio {
+            display: none;
+
+            .logo {
+                display: none;
+            }
+
+            nav {
+                display: none;
+
+                .url_index {
+                    display: none;
+
+                }
+            }
+
+            a button {
+                display: none;
+
+            }
+        }
+    }
+
+    /*darle estilos al bootstrap*/
+    .fixed-top {
+        /*para que sea estatico*/
+        display: flex;
+        position: static;
+
+        .container-fluid {
+            /*poner el fonde de color bronw*/
+            background-color: $bcolor;
+            padding-left: 0;
+
+            .navbar-brand {
+                margin: 0%;
+                color: goldenrod;
+                background-color: #F8F9FA;
+                border-radius: 0;
+                padding: 15px;
+                /*que el bootstrap quede arriba de todo para no dejar espacios*/
+            }
+
+            .navbar-toggler {
+                background-color: #F8F9FA;
+
+                .navbar-toggler-icon {
+                    color: $rojo_letra;
+                }
+
+            }
+
+            .offcanvas-header h5 {
+                color: $rojo_letra;
+            }
+
+            .offcanvas-body {
+                background-color: $bcolor;
+
+                ul a {
+                    color: $color_letra;
+                }
+
+            }
+        }
+    }
+
+    /*index*/
+    .carousel.slide {
+        margin-bottom: 20px;
+    }
+
+    footer .contenido_footer {
+        @include flex(column, center, center);
+
+        .iconos_sociales {
+            h3 {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .url img {
+                height: 40px;
+                margin-right: 20px;
+            }
+
+        }
+
+        .footer_url ul li {
+            margin-right: 30px;
+            text-align: center;
+            justify-content: center;
+        }
+    }
+
+    /*dandole estilo a cartelera.index*/
+
+    .imagenes_cartelera {
+        @include flex(column, center, center);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h4 {
+            justify-content: center;
+        }
+
+    }
+
+    /*estilo a trilers*/
+    main .peliculas {
+        @include flex(column, center, center);
+        margin: 0%;
+
+        iframe {
+            margin-top: 10px;
+            width: 320px;
+            margin-left: 0%;
+        }
+
+        .peliculas_texto {
+            h2 {
+                width: 320px;
+                justify-items: center;
+                margin-left: 30px;
+                margin-top: 10px;
+                margin-bottom: 0%;
+            }
+
+
+            p {
+                width: 320px;
+                margin-left: 30px;
+            }
+        }
+    }
+
+    /*dando estilo a candy.index*/
+    main {
+        .promo {
+            display: block;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+
+            h2 {
+                width: 320px;
+                margin-left: 35px;
+                text-align: center;
+            }
+
+            img {
+                height: 180px;
+                margin: 0%;
+            }
+        }
+
+        .candy {
+            display: block;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+
+
+
+            h2 {
+                width: 320px;
+
+                margin-left: 45px;
+                text-align: center;
+            }
+
+            img {
+                height: 180px;
+                margin: 0%;
+            }
+        }
+
+    }
+
+    /*dando estilo a conocenos.index*/
+    main {
+        .mapas {
+            margin: 5px;
+        }
+
+        iframe {
+            width: 320px;
+            margin: 25px;
+        }
+
+        .beneficios {
+            margin: 15px;
+            margin-left: 40px;
+
+            img {
+                margin-bottom: 25px;
+            }
+        }
+    }
+}

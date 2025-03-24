@@ -1,0 +1,47 @@
+$color_letra: white;
+$fuente: Montserrat;
+$bcolor: brown;
+$bcolor_subtitulo: goldenrod;
+@mixin flex ($direction, $jcontent, $aitems) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $jcontent;
+    align-items: $aitems;
+}
+
+/*vamos a darle estilos a trailers.index*/
+ul li a.under_trailer {
+    color: rgb(49, 49, 49);
+}
+
+main {
+    .peliculas {
+        @include flex(row, none, center);
+        margin-left: 140px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        
+        iframe {
+            margin-right: 15px;
+        }
+
+        .peliculas_texto {
+            width: 400px;
+            color: $color_letra;
+            font-family: $fuente;
+
+            h2 {
+                font-size: 35px;
+                font: 600;
+                background-color: $bcolor_subtitulo;
+            }
+
+            p {
+                font-size: 17px;
+                font-weight: 400;
+                background-color: $bcolor;
+
+            }
+        }
+    }
+}

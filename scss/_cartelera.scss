@@ -1,0 +1,27 @@
+$fuente: Montserrat;
+
+/*vamos a darle estilos a cartelera.index*/
+ul li a.under_cartelera {
+    color: rgb(49, 49, 49);
+}
+
+.cartelera_opciones {
+    padding: 20px;
+    font-family: $fuente;
+    justify-items: center;
+}
+
+.imagenes_cartelera {
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+     h4 {
+        text-align: center;
+        background-color: white;
+        width: 200px;
+        justify-content: center;
+    }
+   
+
+}

@@ -1,0 +1,580 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*vamos a darle estilos a cartelera.index*/
+ul li a.under_cartelera {
+  color: rgb(49, 49, 49);
+}
+
+.cartelera_opciones {
+  padding: 20px;
+  font-family: Montserrat;
+  justify-items: center;
+}
+
+.imagenes_cartelera {
+  display: grid;
+  grid-template-columns: repeat(4, 240px);
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+}
+.imagenes_cartelera h4 {
+  text-align: center;
+  background-color: white;
+  width: 200px;
+  justify-content: center;
+}
+
+/*vamos a darle estilos a trailers.index*/
+ul li a.under_trailer {
+  color: rgb(49, 49, 49);
+}
+
+main .peliculas {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+  margin-left: 140px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+main .peliculas iframe {
+  margin-right: 15px;
+}
+main .peliculas .peliculas_texto {
+  width: 400px;
+  color: white;
+  font-family: Montserrat;
+}
+main .peliculas .peliculas_texto h2 {
+  font-size: 35px;
+  font: 600;
+  background-color: goldenrod;
+}
+main .peliculas .peliculas_texto p {
+  font-size: 17px;
+  font-weight: 400;
+  background-color: brown;
+}
+
+ul li a.under_candy {
+  color: rgb(49, 49, 49);
+}
+
+/*vamos a darle estilos a candy.index*/
+main .promo {
+  margin: 10px;
+}
+main .promo h2 {
+  font-family: Montserrat;
+  font-size: 35px;
+  color: white;
+  background-color: goldenrod;
+  width: 200px;
+}
+main .promo .combos_promo img {
+  height: 220px;
+}
+main .candy {
+  margin: 15px;
+}
+main .candy .candy_promos img {
+  height: 220px;
+  margin-top: 10px;
+}
+main .candy h2 {
+  font-family: Montserrat;
+  font-size: 35px;
+  color: white;
+  background-color: goldenrod;
+  width: 200px;
+}
+
+/*vamos a darle estilos a conocenos.index*/
+ul li a.under_conocenos {
+  color: rgb(49, 49, 49);
+}
+
+main .conocenos {
+  text-align: center;
+  color: white;
+  font-family: Montserrat;
+  padding: 20px;
+}
+main .conocenos h2 {
+  font-size: xx-large;
+  font-weight: 800;
+  background-color: goldenrod;
+}
+main .conocenos p {
+  font-size: x-large;
+  font-weight: 500;
+  background-color: brown;
+}
+main .mapas {
+  margin-left: 10px;
+}
+main .beneficios {
+  margin: auto;
+}
+main .beneficios img {
+  height: 170px;
+}
+
+.titulo_maps, .titulo_beneficios {
+  text-align: center;
+  font-family: Montserrat;
+  color: white;
+  font-size: xx-large;
+  font-weight: 800;
+}
+
+.titulo_maps, .titulo_beneficios {
+  background-color: goldenrod;
+}
+
+.titulo_beneficios {
+  background-color: brown;
+}
+
+body {
+  background-image: url(../imagenes/sala.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Montserrat;
+}
+
+a {
+  /*modificando todas las url */
+  text-decoration: none;
+  color: rgb(253, 249, 249);
+  font-family: Montserrat;
+  line-height: 2;
+  text-align: center;
+  padding-right: 25px;
+  font-size: 20px;
+  font-weight: 600;
+  border-color: black;
+  border-radius: 10px;
+}
+
+.header_mio .logo {
+  /* esto es para centrar tanto el logo como el h1*/
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+}
+.header_mio .logo a {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+}
+.header_mio .logo a img {
+  /* para achicar la foto*/
+  height: 47px;
+  margin-right: 0px;
+}
+.header_mio .logo a h1 {
+  /*decorando el H1 */
+  width: 300px;
+  background-color: rgb(255, 255, 255);
+  color: brown;
+  font-family: Montserrat;
+  font-size: 39px;
+  font-weight: 700;
+  margin: 0;
+}
+.header_mio a .login {
+  /*estilos en el boton de LOGIN*/
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 20px;
+  color: goldenrod;
+}
+
+header .header_mio {
+  font-family: Montserrat;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  background-color: brown;
+  padding: 10px;
+}
+header .header_mio ul li :hover {
+  /*darle color a la url si el mause lo toca*/
+  color: yellow;
+}
+
+ul li {
+  /* que los ul esten al lado no en orden*/
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+main .h2_index {
+  color: white;
+  background-color: goldenrod;
+  width: 300px;
+  font-family: brown;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 12px;
+}
+main .prox_estrenos {
+  margin-left: 3px;
+  margin-bottom: 10px;
+}
+
+footer {
+  font-family: Montserrat;
+  background-color: brown;
+  padding: 80px 0;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+footer .contenido_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .contenido_footer .iconos_sociales li a img {
+  height: 25px;
+  padding: 0 10px;
+  display: flex;
+  align-content: flex-start;
+  margin-bottom: 0;
+}
+footer .contenido_footer .iconos_sociales h3 {
+  padding: 10px;
+  font-family: Montserrat;
+  background-position: 0 20px;
+}
+footer .contenido_footer .iconos_sociales p {
+  text-align: center center;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.footer_url ul :hover {
+  color: yellow;
+}
+
+@media screen and (max-width: 1024px) {
+  /* media para  el index*/
+  /*mpdificando el header para que entre en una tablet*/
+  .header_mio h1 {
+    width: 280px;
+  }
+  .header_mio nav {
+    margin-top: 20px;
+  }
+  .header_mio nav ul li {
+    display: inline;
+  }
+  .header_mio nav ul li a {
+    text-align: center;
+    padding-right: 15px;
+  }
+  .header_mio a .login {
+    margin-right: 20px;
+  }
+  main .h2_index {
+    padding: 10px;
+    margin-left: 28px;
+    margin-bottom: 0;
+    display: inline;
+  }
+  main .prox_estrenos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+  }
+  main .prox_estrenos img {
+    height: 370px;
+    margin: 15px;
+  }
+  /*estilos para el footer*/
+  .contenido_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contenido_footer .iconos_sociales h3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: none;
+    margin-left: 40px;
+  }
+  .contenido_footer .iconos_sociales .url img {
+    height: 30px;
+    text-align: center;
+  }
+  .contenido_footer .iconos_sociales p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: none;
+  }
+  .contenido_footer .footer_url ul li {
+    display: flex;
+    display: block;
+    text-align: center;
+  }
+  /* media para lA CARTELERA*/
+  .cartelera_opciones {
+    justify-items: center;
+  }
+  .imagenes_cartelera {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+  }
+  .imagenes_cartelera h4 {
+    text-align: center;
+    background-color: white;
+    justify-content: center;
+    width: 200px;
+  }
+  /*formato media para trialers*/
+  main .peliculas {
+    display: block;
+    margin-left: 140px;
+  }
+  main .peliculas .peliculas_texto {
+    margin-bottom: 40px;
+    text-align: start;
+  }
+  main .peliculas .peliculas_texto h2 {
+    width: 560px;
+  }
+  main .peliculas .peliculas_texto p {
+    width: 560px;
+  }
+  /*media para candy*/
+  main .promo {
+    margin-left: 10%;
+  }
+  main .promo h2 {
+    width: 550px;
+    padding: 10px;
+    margin: 20px;
+  }
+  main .promo img {
+    margin-left: 140px;
+    height: 350px;
+  }
+  main .candy {
+    margin-left: 10%;
+  }
+  main .candy h2 {
+    width: 550px;
+    padding: 10px;
+    margin: 20px;
+  }
+  main .candy img {
+    margin-left: 140px;
+    height: 350px;
+  }
+  /*media para conocenos*/
+  main .conocenos {
+    margin: 10px;
+  }
+  main .mapas {
+    display: flex;
+    display: block;
+    margin-left: 120px;
+  }
+  main .mapas iframe {
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+  main .beneficios {
+    margin-left: 10%;
+  }
+}
+.fixed-top {
+  display: none;
+}
+
+/*media para un telefono*/
+@media screen and (max-width: 768px) {
+  header .header_mio {
+    display: none;
+  }
+  header .header_mio .logo {
+    display: none;
+  }
+  header .header_mio nav {
+    display: none;
+  }
+  header .header_mio nav .url_index {
+    display: none;
+  }
+  header .header_mio a button {
+    display: none;
+  }
+  /*darle estilos al bootstrap*/
+  .fixed-top {
+    /*para que sea estatico*/
+    display: flex;
+    position: static;
+  }
+  .fixed-top .container-fluid {
+    /*poner el fonde de color bronw*/
+    background-color: brown;
+    padding-left: 0;
+  }
+  .fixed-top .container-fluid .navbar-brand {
+    margin: 0%;
+    color: goldenrod;
+    background-color: #F8F9FA;
+    border-radius: 0;
+    padding: 15px;
+    /*que el bootstrap quede arriba de todo para no dejar espacios*/
+  }
+  .fixed-top .container-fluid .navbar-toggler {
+    background-color: #F8F9FA;
+  }
+  .fixed-top .container-fluid .navbar-toggler .navbar-toggler-icon {
+    color: rgb(192, 66, 66);
+  }
+  .fixed-top .container-fluid .offcanvas-header h5 {
+    color: rgb(192, 66, 66);
+  }
+  .fixed-top .container-fluid .offcanvas-body {
+    background-color: brown;
+  }
+  .fixed-top .container-fluid .offcanvas-body ul a {
+    color: white;
+  }
+  /*index*/
+  .carousel.slide {
+    margin-bottom: 20px;
+  }
+  footer .contenido_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .contenido_footer .iconos_sociales h3 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer .contenido_footer .iconos_sociales .url img {
+    height: 40px;
+    margin-right: 20px;
+  }
+  footer .contenido_footer .footer_url ul li {
+    margin-right: 30px;
+    text-align: center;
+    justify-content: center;
+  }
+  /*dandole estilo a cartelera.index*/
+  .imagenes_cartelera {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagenes_cartelera h4 {
+    justify-content: center;
+  }
+  /*estilo a trilers*/
+  main .peliculas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+  }
+  main .peliculas iframe {
+    margin-top: 10px;
+    width: 320px;
+    margin-left: 0%;
+  }
+  main .peliculas .peliculas_texto h2 {
+    width: 320px;
+    justify-items: center;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 0%;
+  }
+  main .peliculas .peliculas_texto p {
+    width: 320px;
+    margin-left: 30px;
+  }
+  /*dando estilo a candy.index*/
+  main .promo {
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main .promo h2 {
+    width: 320px;
+    margin-left: 35px;
+    text-align: center;
+  }
+  main .promo img {
+    height: 180px;
+    margin: 0%;
+  }
+  main .candy {
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main .candy h2 {
+    width: 320px;
+    margin-left: 45px;
+    text-align: center;
+  }
+  main .candy img {
+    height: 180px;
+    margin: 0%;
+  }
+  /*dando estilo a conocenos.index*/
+  main .mapas {
+    margin: 5px;
+  }
+  main iframe {
+    width: 320px;
+    margin: 25px;
+  }
+  main .beneficios {
+    margin: 15px;
+    margin-left: 40px;
+  }
+  main .beneficios img {
+    margin-bottom: 25px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

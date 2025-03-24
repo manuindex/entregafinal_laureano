@@ -1,0 +1,38 @@
+$fuente: Montserrat;
+$bcolor_subtitulo: goldenrod;
+$color_letra: white;
+ul li a.under_candy {
+    color: rgb(49, 49, 49);
+}
+
+/*vamos a darle estilos a candy.index*/
+main {
+    .promo {
+        margin: 10px;
+        h2 {
+            font-family: $fuente;
+            font-size: 35px;
+            color: $color_letra;
+            background-color: $bcolor_subtitulo;
+            width: 200px;
+        }
+        .combos_promo img {
+            height: 220px;
+        }
+    }
+
+    .candy {
+        margin: 15px;
+        .candy_promos img {
+            height: 220px;
+            margin-top: 10px;
+        }
+         h2 {
+            font-family: $fuente;
+            font-size: 35px;
+            color: $color_letra;
+            background-color: $bcolor_subtitulo;
+            width: 200px;
+        }
+    }
+}

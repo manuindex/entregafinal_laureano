@@ -162,16 +162,16 @@ h1
 }
  */
 /*creando un grid para la cartelera*/
- .imagenes_cartelera {
+/*  .imagenes_cartelera {
     display: grid;
     grid-template-columns: repeat(4, 240px);
     grid-template-rows: repeat(3, 1fr);
     justify-content: center; 
  }
 
- 
+  */
 
-.imagenes_cartelera div h4 {
+/* .imagenes_cartelera div h4 {
     text-align: center;
     background-color: white;
     
@@ -179,27 +179,27 @@ h1
     
     width: 200px;
     justify-content: center;
-}
+} */
 
 /*vamos a darle estilos a trailers.index*/
 
-ul li a.under_trailer {
+/* ul li a.under_trailer {
     color: rgb(49, 49, 49);
 }
-
-.peliculas {
+ */
+/* .peliculas {
     display: flex;
     align-items: center;
     margin-left: 200px;
     margin-top: 20px;
     margin-bottom: 10px;
-}
+} */
 
-iframe {
+/* iframe {
     margin-right: 15px;
-}
+} */
 
-.peliculas_texto {
+/* .peliculas_texto {
     width: 400px;
     color: white;
     font-family: Montserrat;
@@ -209,25 +209,25 @@ iframe {
     font-size: 35px;
     font: 600;
     background-color: goldenrod;
-}
+} */
 
-.peliculas_texto p {
+/* .peliculas_texto p {
     font-size: 17px;
     font-weight: 400;
     background-color: brown;
 
 }
-
+ */
 /*vamos a darle estilos a candy.index*/
-ul li a.under_candy {
+/* ul li a.under_candy {
     color: rgb(49, 49, 49);
 }
-
-.promo {
+ */
+/* .promo {
     margin: 10px;
 }
-
-.promo h2 {
+ */
+/* .promo h2 {
     font-family: Montserrat;
     font-size: 35px;
     color: white;
@@ -255,10 +255,10 @@ ul li a.under_candy {
     color: white;
     background-color: goldenrod;
     width: 200px;
-}
+} */
 
 /*vamos a darle estilos a conocenos.index*/
-ul li a.under_conocenos {
+/* ul li a.under_conocenos {
     color: rgb(49, 49, 49);
 }
 
@@ -280,8 +280,8 @@ ul li a.under_conocenos {
     font-weight: 500;
     background-color: brown;
 }
-
-.mapas {
+ */
+/* .mapas {
     margin: 40px;
     margin-top: 10px;
     display: flex;
@@ -319,12 +319,12 @@ ul li a.under_conocenos {
 .fixed-top {
     display: none;
 }
-
+ */
 /*el responsive una media que es una tablet*/
 @media screen and (max-width: 1024px) {
 
-    /* media para  el index*/
-    nav {
+   /*  /* media para  el index*/
+    /* nav {
         margin-top: 20px;
     }
 
@@ -336,10 +336,10 @@ ul li a.under_conocenos {
         height: 240px;
         padding: 10px;
 
-    }
+    } */  
 
     /*mpdificando el header para que entre en una tablet*/
-    .h2_index {
+   /*  .h2_index {
         padding: 10px;
         margin-left: 28px;
         margin-bottom: 0;
@@ -369,10 +369,10 @@ ul li a.under_conocenos {
     h1 {
         width: 280px;
 
-    }
+    } */
 
     /*estilos para el footer*/
-    .contenido_footer {
+   /*  .contenido_footer {
         display: flex;
         display: block;
         justify-content: center;
@@ -400,288 +400,288 @@ ul li a.under_conocenos {
         display: flex;
         display: block;
         text-align: center;
-    }
+    } */
 
     /*media para lA CARTELERA*/
 
-    .cartelera_opciones {
+    /* .cartelera_opciones {
       
         
        justify-items: center;
     }
-
-    .imagenes_cartelera {
+ */
+    /* .imagenes_cartelera {
         display: grid;
         grid-template-columns: repeat(2, 250px);
         grid-template-rows: repeat(3, 1fr);
         justify-content: center; 
-     }
+     } */
 
-    .imagenes_cartelera div h4 {
+    /* .imagenes_cartelera div h4 {
         text-align: center;
         background-color: white;
        justify-content: center;
         width: 200px;
-    }
+    } */
 
     /*formato media para trialers*/
-    .peliculas {
+    /* .peliculas {
         display: block;
         margin-left: 140px;
-    }
+    } */
 
-    .peliculas_texto {
+    /* .peliculas_texto {
         margin-bottom: 40px;
         text-align: start;
-    }
+    } */
 
-    .peliculas_texto h2 {
+    /* .peliculas_texto h2 {
         width: 560px;
-    }
+    } */
 
-    .peliculas_texto p {
+    /* .peliculas_texto p {
         width: 560px;
-    }
+    } */
 
     /*media para candy*/
 
-    .promo {
+    /* .promo {
         margin-left: 10%;
-    }
+    } */
 
-    .promo h2 {
+    /* .promo h2 {
         width: 550px;
         padding: 10px;
         margin: 20px;
-    }
+    } */
 
-    .combos_promo img {
+   /*  .combos_promo img {
         height: 350px;
 
-    }
+    } */
 
-    .candy {
+    /* .candy {
         margin-left: 10%;
-    }
+    } */
 
-    .candy h2 {
+    /* .candy h2 {
         width: 550px;
         padding: 10px;
         margin: 20px;
-    }
+    } */
 
-    .candy_promos img {
+    /* .candy_promos img {
         height: 350px;
-    }
+    } */
 
     /*media para conocenos*/
-    .conocenos {
+   /*  .conocenos {
         margin: 10px;
-    }
+    } */
 
-    .mapas {
+    /* .mapas {
         display: flex;
         display: block;
         margin-left: 120px;
 
-    }
+    } */
 
-    .mapas iframe {
+    /* .mapas iframe {
         margin-bottom: 15px;
         margin-top: 10px;
-    }
+    } */
 
-    .beneficios {
+    /* .beneficios {
         margin-left: 10%;
     }
-
-    .fixed-top {
+ */
+    /* .fixed-top {
         display: none;
-    }
+    } */
 }
 
 /*media para un telefono*/
 @media screen and (max-width: 768px) {
     /*poner el bootstrap y sacar el header mio*/
 
-    header .logo {
+    /* header .logo {
         display: none;
-    }
+    } */
 
-    header .url_index {
-        display: none;
-
-    }
-
-    .header_mio {
-        display: none;
-    }
-
-    .header_mio nav {
+    /* header .url_index {
         display: none;
 
-    }
+    } */
 
-    .header_mio a button {
+    /* .header_mio {
+        display: none;
+    }
+ */
+    /* .header_mio nav {
         display: none;
 
-    }
+    } */
+
+    /* .header_mio a button {
+        display: none;
+
+    } */
 
     /*darle estilos al bootstrap*/
-    .fixed-top {
+    /* .fixed-top */  
         /*para que sea estatico*/
-        display: flex;
+       /*  display: flex;
         position: static;
+ */
+     
 
-    }
-
-    .container-fluid {
+    /* .container-fluid */  
         /*poner el fonde de color bronw*/
-        background-color: brown;
-        padding-left: 0
-    }
+        /* background-color: brown;
+        padding-left: 0 */
+     
 
-    .container-fluid .navbar-brand {
+   /*  .container-fluid .navbar-brand {
         margin: 0%;
         /*que el bootstrap quede arriba de todo para no dejar espacios*/
-    }
+     
 
-    .navbar-brand {
+    /* .navbar-brand */  
         /*dondo forma al LOGIN*/
-        color: goldenrod;
+        /* color: goldenrod;
         background-color: #F8F9FA;
         border-radius: 0;
-        padding: 15px;
-    }
+        padding: 15px; */
+    
 
-    .navbar {
+   /*  .navbar {
         margin-top: 0%;
-    }
+    } */
 
-    button.navbar-toggler {
+    /* button.navbar-toggler {
         background-color: #F8F9FA;
-    }
+    } */
 
-    span.navbar-toggler-icon {
+    /* span.navbar-toggler-icon {
         color: rgb(192, 66, 66);
-    }
+    } */
 
-    .offcanvas-header h5 {
+   /*  .offcanvas-header h5 {
         color: rgb(192, 66, 66);
-    }
+    } */
 
-    .offcanvas-body {
+    /* .offcanvas-body {
         background-color: brown;
-    }
+    } */
 
-    .offcanvas-body ul a {
+    /* .offcanvas-body ul a {
         color: white;
-    }
+    } */
 
 
 
     /*index*/
-    .carousel.slide {
+    /* .carousel.slide {
         margin-bottom: 20px;
-    }
+    } */
 
-    .contenido_footer {
+   /*  .contenido_footer {
         display: flex;
         display: block;
-    }
+    } */
 
-    .iconos_sociales h3 {
+    /* .iconos_sociales h3 {
         margin-left: auto;
         margin-right: auto;
-    }
+    } */
 
-    .iconos_sociales .url img {
+    /* .iconos_sociales .url img {
         height: 40px;
         margin-right: 20px;
-    }
+    } */
 
-    .footer_url ul li {
+    /* .footer_url ul li {
         margin-right: 20px;
         text-align: center;
-    }
+    } */
 /*dandole estilo a cartelera.index*/
 
 
-    .imagenes_cartelera {
+    /* .imagenes_cartelera {
         
         display: block;
         justify-items: center;
-    }
-    .imagenes_cartelera div h4 {
+    } */
+    /* .imagenes_cartelera div h4 {
         justify-content: center;
-    }
+    } */
     /*estilo a trilers*/
-    .peliculas {
+    /* .peliculas {
         display: block;
         justify-items: center;
         margin: 10px;
-    }
+    } */
 
-    .peliculas iframe {
+    /* .peliculas iframe {
         width: 320px;
-    }
+    } */
 
-    .peliculas_texto h2 {
+    /* .peliculas_texto h2 {
         width: 320px;
         justify-items: center;
         margin-left: 30px;
     }
-
-    .peliculas_texto p {
+ */
+   /*  .peliculas_texto p {
         width: 320px;
         margin-left: 30px;
-    }
+    } */
 /*dando estilo a candy.index*/
-    .promo {
+    /* .promo {
         display: block;
         justify-content: center;
         margin: 15px;
-    }
+    } */
 
-    .promo h2 {
+    /* .promo h2 {
+        width: 320px;
+        margin-left: 0;
+        text-align: center;
+    } */
+
+    /* .promo img {
+        height: 180px;
+    } */
+
+   /*  .candy {
+        display: block;
+        justify-content: center;
+        margin: 15px;
+    } */
+
+    /* .candy h2 {
         width: 320px;
         margin-left: 0;
         text-align: center;
     }
-
-    .promo img {
+ */
+   /*  .candy img {
         height: 180px;
-    }
-
-    .candy {
-        display: block;
-        justify-content: center;
-        margin: 15px;
-    }
-
-    .candy h2 {
-        width: 320px;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .candy img {
-        height: 180px;
-    }
+    } */
 /*dando estilo a conocenos.index*/
-    .mapas {
+   /*  .mapas {
         margin: 5px;
-    }
+    } */
 
-    .mapas iframe {
+   /*  .mapas iframe {
         width: 320px;
         margin: 15px;
-    }
-    .beneficios {
+    } */
+    /* .beneficios {
         margin-left: 20px;
-    }
+    } */
 
-    .beneficios img {
+    /* .beneficios img {
         margin-bottom: 25px;
-    }
+    } */
 }

@@ -1,0 +1,59 @@
+$fuente: Montserrat;
+$bcolor: brown;
+$bcolor_subtitulo: goldenrod;
+$color_letra: white;
+/*vamos a darle estilos a conocenos.index*/
+ul li a.under_conocenos {
+    color: rgb(49, 49, 49);
+}
+
+main {
+    .conocenos {
+        text-align: center;
+        color: $color_letra;
+        font-family: $fuente;
+        padding: 20px;
+
+        h2 {
+            font-size: xx-large;
+            font-weight: 800;
+            background-color: $bcolor_subtitulo;
+        }
+
+        p {
+            font-size: x-large;
+            font-weight: 500;
+            background-color: $bcolor;
+        }
+
+    }
+
+    .mapas {
+        margin-left: 10px;
+    }
+
+    .beneficios {
+        margin: auto;
+        img {
+            height: 170px;
+        }
+    }
+}
+
+.titulo_maps {
+    text-align: center;
+    font-family: $fuente;
+    color: $color_letra;
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+.titulo_maps {
+    @extend .titulo_maps;
+    background-color: $bcolor_subtitulo;
+}
+
+.titulo_beneficios {
+    @extend .titulo_maps;
+    background-color: $bcolor;
+}
