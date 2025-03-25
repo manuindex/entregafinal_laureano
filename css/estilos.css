@@ -12,7 +12,7 @@ ul li a.under_cartelera {
   padding: 20px;
   font-family: Montserrat;
   justify-items: center;
-} v
+}
 
 .imagenes_cartelera {
   display: grid;
@@ -20,7 +20,8 @@ ul li a.under_cartelera {
   grid-template-rows: repeat(3, 1fr);
   justify-content: center;
 }
-.imagenes_cartelera h4 {
+
+h4 {
   text-align: center;
   background-color: white;
   width: 200px;
@@ -44,7 +45,22 @@ main .peliculas {
 main .peliculas iframe {
   margin-right: 15px;
 }
-main .peliculas .peliculas_texto 
+main .peliculas .peliculas_texto {
+  width: 400px;
+  color: white;
+  font-family: Montserrat;
+}
+main .peliculas .peliculas_texto h2 {
+  font-size: 35px;
+  font: 600;
+  background-color: goldenrod;
+}
+main .peliculas .peliculas_texto p {
+  font-size: 17px;
+  font-weight: 400;
+  background-color: brown;
+}
+
 ul li a.under_candy {
   color: rgb(49, 49, 49);
 }
