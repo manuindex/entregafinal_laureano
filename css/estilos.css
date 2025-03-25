@@ -44,22 +44,7 @@ main .peliculas {
 main .peliculas iframe {
   margin-right: 15px;
 }
-main .peliculas .peliculas_texto {
-  width: 400px;
-  color: white;
-  font-family: Montserrat;
-}
-main .peliculas .peliculas_texto h2 {
-  font-size: 35px;
-  font: 600;
-  background-color: goldenrod;
-}
-main .peliculas .peliculas_texto p {
-  font-size: 17px;
-  font-weight: 400;
-  background-color: brown;
-}
-
+main .peliculas .peliculas_texto 
 ul li a.under_candy {
   color: rgb(49, 49, 49);
 }
