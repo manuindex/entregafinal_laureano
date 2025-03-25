@@ -12,16 +12,16 @@ ul li a.under_cartelera {
 }
 
 .imagenes_cartelera {
+
     display: grid;
     grid-template-columns: repeat(4, 240px);
     grid-template-rows: repeat(3, 1fr);
     justify-content: center;
-     h4 {
-        text-align: center;
-        background-color: white;
-        width: 200px;
-        justify-content: center;
-    }
-   
+}
 
+h4 {
+    text-align: center;
+    background-color: white;
+    width: 200px;
+    justify-content: center;
 }
