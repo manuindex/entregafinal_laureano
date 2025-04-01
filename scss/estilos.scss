@@ -7,6 +7,7 @@
 @import 'trailers';
 @import 'candy';
 @import 'conocenos';
+@import 'login';
 
 $fuente: Montserrat;
 $bcolor: brown;
@@ -22,13 +23,14 @@ $rojo_letra: rgb(192, 66, 66);
     align-items: $aitems;
 }
 
-body {
+body  {
     background-image: url(../imagenes/sala.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
     font-family: $fuente;
+    
 }
 
 a {
