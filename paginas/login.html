@@ -10,45 +10,161 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body class="body_login">
+  <header>
+    <div class="header_mio">
+      <div class="logo">
+        <a href="../index.html">
+          <h1>CINE SCRIPT</h1>
+        </a>
+      </div>
 
-<button>
-  <img src="" alt="">
-</button>
+
+      <nav>
+        <ul class="url_index">
+          <li><a href="./cartelera.html">CARTELERA</a></li>
+          <li><a href="./trailers.html">TRAILERS</a></li>
+          <li><a href="./candy.html">CANDY</a></li>
+          <li><a href="./conocenos.html">CONOCENOS</a></li>
+        </ul>
+      </nav>
+      <a href="./login.html">
+        <button class="login">LOGIN</button>
+      </a>
+    </div>
+
+
+
+    <nav class="navbar bg-body-tertiary fixed-top d-md-none">
+
+      <div class="container-fluid col-sm-12">
+        <a class="navbar-brand" href="./paginas/login.html">LOGIN </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/cartelera.html">CARTELERA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/trailers.html">TRAILERS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/candy.html">CANDY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/conocenos.html">CONOCENOS</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
 
 
   <main class="login">
-    <div">
-      <a class="logo_login" href="../index.html">
-        <img class="logo_login" src="../imagenes/popcorn.ico">
-        <h3>CINE SCRIPT</h3>
+    <div class="formulario_completo">
+      <div class="logo2">
+        <a class="logo_login" href="../index.html">
+          <img class="logo_login" src="../imagenes/popcorn.ico">
+          <h3>CINE SCRIPT</h3>
 
-      </a>
+        </a>
+      </div>
+      <form class="form_login">
+
+        <div class="opciones">
+          <label for="exampleInputEmail1" class="form-label">USUARIO</label>
+          <input type="email" id="exampleInputEmail1">
+
+        </div>
+        <div class="opciones">
+          <label for="contraseña">CONTRASEÑA</label>
+          <input type="password" id="contraseña">
+        </div>
+        <div class="check_label">
+          <input type="checkbox" id="box">
+          <label for="exampleCheck1">RECORDAR USUARIO</label>
+        </div>
+        <button type="submit">LOGIN</button>
+        <button type="submit">CREAR CUENTA</button>
+      </form>
     </div>
-    <form class="login">
 
-      <div class="mail">
-        <label for="exampleInputEmail1" class="form-label">Email </label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 
+    <section>
+      <div class="promociones_login">
+        <h3 class="h3_login">PROMOCIONES</h3>
+        <img class="img1_login" src="../imagenes/descuento1.jpg" alt="descuento1">
+        <img class="img2_login" src="../imagenes/descuento2.jpg" alt="descuento2">
+        <img class="img3_login" src="../imagenes/descuento3.jpg" alt="descuento3">
+        <img class="img4_login" src="../imagenes/descuento4.jpg" alt="descuento4">
       </div>
-      <div class="contraseña">
-        <label for="contraseña">CONTRASEÑA</label>
-        <input type="password" id="contraseña">
-      </div>
-      <div class="box">
-        <input type="checkbox" id="box">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
-      <button type="submit">Recordar Usuario</button>
-    </form>
+    </section>
+
+
+
+
   </main>
 
+
+
+
+  <footer>
+    <div class="contenido_footer">
+      <div class="iconos_sociales">
+        <h3 class="h3_footer">CINE SCRIPT</h3>
+        <ul class="url">
+          <li><a href="https://www.instagram.com" target="_blank"><img src="../imagenes/instagram.jpg"
+                alt="instagram"></a></li>
+          <li><a href="https://www.facebook.com" target="_blank"><img src="../imagenes/facebook.jpg" alt="facebook"></a>
+          </li>
+          <li><a href="https://www.whatsapp.com" target="_blank"><img src="../imagenes/whasapt.jpg" alt="whasapt"></a>
+          </li>
+        </ul>
+
+        <p class="footer_p2">2025 Derechos reservados Cine Script©</p>
+      </div>
+
+      <div class="footer_url">
+        <ul>
+          <li><a href=""></a>TERMINOS Y CONDICIONES</li>
+          <li><a href=""></a>BOTON DE ARREPENTIMIENTO </li>
+          <li><a href=""></a>DIRECCION GENERAL DE DEFENSA Y PROTECCION AL CONSUMIDOR </li>
+        </ul>
+      </div>
+      <div class="footer_final">
+        <p>Contacto</p>
+        <p>CINESCRIPTARG@GMAIL.COM</p>
+      </div>
+    </div>
+
+
+
+
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

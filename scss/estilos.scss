@@ -77,11 +77,15 @@ a {
     }
 
     a .login {
-        /*estilos en el boton de LOGIN*/
-        font-size: 15px;
-        font-weight: 700;
+    
         padding: 10px 20px;
-        color: goldenrod;
+        background-color: $bcolor_subtitulo;
+        color: $color_letra;
+        border: none;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 15px;
+        cursor: pointer;
     }
 }
 
@@ -95,7 +99,7 @@ header {
 
         ul li :hover {
             /*darle color a la url si el mause lo toca*/
-            color: $hover;
+            color: rgb(218, 191, 75);
         }
     }
 }
@@ -244,7 +248,14 @@ footer {
             text-align: center;
         }
     }
-
+/* media para el login*/
+main.login {
+    display: flex;
+    display: block;
+}
+.formulario_completo {
+   margin-bottom: 20px;
+}
     /* media para lA CARTELERA*/
 
     .cartelera_opciones {
@@ -446,16 +457,13 @@ footer {
             justify-content: center;
         }
     }
-
+/* media para el login*/
+ 
     /*dandole estilo a cartelera.index*/
 
     .imagenes_cartelera {
         @include flex(column, center, center);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
+     
         h4 {
             justify-content: center;
         }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -135,40 +136,109 @@ main .beneficios img {
   background-color: brown;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
-.body_login {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 main.login {
-  background-color: rgb(57, 23, 151);
-  border-radius: 10%;
-  width: 70%;
-  height: 70%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+main.login .formulario_completo {
+  flex: 1;
+  background-color: brown;
+  font-family: Montserrat;
+  box-shadow: 10px 14px 18px rgba(0, 0, 0, 0.1);
+  border-radius: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.logo_login {
+main.login .formulario_completo .logo_login :hover {
+  color: rgba(189, 199, 46, 0.521);
+}
+main.login .formulario_completo .logo_login {
   margin-bottom: 10px;
-  padding: 0;
   display: flex;
   align-items: center;
   gap: 20px;
 }
-
-.logo_login img {
+main.login .formulario_completo .logo_login img {
   height: auto;
   width: 60px;
+}
+main.login .formulario_completo .opciones label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+}
+main.login .formulario_completo .check_label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: goldenrod;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 500;
+}
+main.login .formulario_completo button {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  background-color: goldenrod;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+main.login .formulario_completo button:hover {
+  background-color: rgba(189, 199, 46, 0.521);
+  /* Cambio de color al pasar el ratón */
+}
+main.login section {
+  flex: 1;
+  background-color: rgb(218, 191, 75);
+  font-family: Montserrat;
+  box-shadow: 10px 14px 18px rgba(0, 0, 0, 0.1);
+  border-radius: 5%;
+}
+main.login section .promociones_login {
+  display: grid;
+}
+main.login section .promociones_login img {
+  width: 100%;
+  /* Hace que las imágenes ocupen todo el ancho disponible */
+  height: auto;
+  /* Mantiene la proporción de las imágenes */
+}
+main.login section .promociones_login .h3_login {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+main.login section .promociones_login .img1_login {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+main.login section .promociones_login .img2_login {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+main.login section .promociones_login .img3_login {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+main.login section .promociones_login .img4_login {
+  grid-column: 2/3;
+  grid-row: 3/4;
 }
 
 body {
@@ -223,11 +293,14 @@ a {
   margin: 0;
 }
 .header_mio a .login {
-  /*estilos en el boton de LOGIN*/
-  font-size: 15px;
-  font-weight: 700;
   padding: 10px 20px;
-  color: goldenrod;
+  background-color: goldenrod;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
 }
 
 header .header_mio {
@@ -242,7 +315,7 @@ header .header_mio {
 }
 header .header_mio ul li :hover {
   /*darle color a la url si el mause lo toca*/
-  color: yellow;
+  color: rgb(218, 191, 75);
 }
 
 ul li {
@@ -370,6 +443,14 @@ footer .contenido_footer .iconos_sociales p {
     display: flex;
     display: block;
     text-align: center;
+  }
+  /* media para el login*/
+  main.login {
+    display: flex;
+    display: block;
+  }
+  .formulario_completo {
+    margin-bottom: 20px;
   }
   /* media para lA CARTELERA*/
   .cartelera_opciones {
@@ -522,12 +603,9 @@ footer .contenido_footer .iconos_sociales p {
     text-align: center;
     justify-content: center;
   }
+  /* media para el login*/
   /*dandole estilo a cartelera.index*/
   .imagenes_cartelera {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
