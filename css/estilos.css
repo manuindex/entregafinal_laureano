@@ -452,6 +452,9 @@ footer .contenido_footer .iconos_sociales p {
   .formulario_completo {
     margin-bottom: 20px;
   }
+  section {
+    padding-bottom: 20px;
+  }
   /* media para lA CARTELERA*/
   .cartelera_opciones {
     justify-items: center;
@@ -604,6 +607,19 @@ footer .contenido_footer .iconos_sociales p {
     justify-content: center;
   }
   /* media para el login*/
+  main.login .formulario_completo {
+    border-radius: 0%;
+  }
+  main.login section {
+    border-radius: 0%;
+  }
+  main.login section .promociones_login {
+    display: block;
+    margin-bottom: 10px;
+  }
+  main.login section img {
+    margin-bottom: 10px;
+  }
   /*dandole estilo a cartelera.index*/
   .imagenes_cartelera {
     display: flex;
