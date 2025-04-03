@@ -11,9 +11,11 @@ main {
         
         h2 {
             font-family: $fuente;
-            font-size: 40px;
+            font-size: xx-large;
+            font-weight: 800;
             color: $color_letra;
             background-color: $bcolor_subtitulo;
+            text-align: center;
              
         }
         .combos_promo img {
@@ -31,9 +33,12 @@ main {
         }
          h2 {
             font-family: $fuente;
-            font-size: 40px;
+           font-size: xx-large;
+            font-weight: 800;
             color: $color_letra;
             background-color: $bcolor_subtitulo;
+            text-align: center;
+            
              
         }
     }

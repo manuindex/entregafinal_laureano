@@ -69,9 +69,11 @@ ul li a.under_candy {
 /*vamos a darle estilos a candy.index*/
 main .promo h2 {
   font-family: Montserrat;
-  font-size: 40px;
+  font-size: xx-large;
+  font-weight: 800;
   color: white;
   background-color: goldenrod;
+  text-align: center;
 }
 main .promo .combos_promo img {
   height: 200px;
@@ -84,9 +86,11 @@ main .candy .candy_promos img {
 }
 main .candy h2 {
   font-family: Montserrat;
-  font-size: 40px;
+  font-size: xx-large;
+  font-weight: 800;
   color: white;
   background-color: goldenrod;
+  text-align: center;
 }
 
 /*vamos a darle estilos a conocenos.index*/
@@ -138,7 +142,9 @@ main .beneficios img {
 
 main.login {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: none;
   gap: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -160,6 +166,8 @@ main.login .formulario_completo .logo_login :hover {
 main.login .formulario_completo .logo_login {
   margin-bottom: 10px;
   display: flex;
+  flex-direction: row;
+  justify-content: none;
   align-items: center;
   gap: 20px;
 }
