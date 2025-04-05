@@ -249,6 +249,18 @@ main.login section .promociones_login .img4_login {
   grid-row: 3/4;
 }
 
+cssCopiar código footer .box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: width 0.5s ease, background-color 1s ease;
+}
+
+.box:hover {
+  width: 200px;
+  background-color: blue;
+}
+
 body {
   background-image: url(../imagenes/sala.jpg);
   background-repeat: no-repeat;
