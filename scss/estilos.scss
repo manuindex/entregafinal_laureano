@@ -24,13 +24,16 @@ $rojo_letra: rgb(192, 66, 66);
 }
 
 body {
-    background-image: url(../imagenes/sala.jpg);
+    /*  background-image: url(../imagenes/sala.jpg);
+    
+ */
+    /* background: linear-gradient */
+    background: radial-gradient( rgba(2, 2, 2, 2), transparent), url(../imagenes/sala.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
     font-family: $fuente;
-
 }
 
 a {

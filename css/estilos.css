@@ -75,9 +75,23 @@ main .promo h2 {
   background-color: goldenrod;
   text-align: center;
 }
+main .promo .combos_promo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
 main .promo .combos_promo img {
   height: 200px;
   margin-bottom: 10px;
+}
+main .candy .candy_promos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  margin-left: 120px;
 }
 main .candy .candy_promos img {
   height: 200px;
@@ -107,7 +121,8 @@ main .conocenos {
 main .conocenos h2 {
   font-size: xx-large;
   font-weight: 800;
-  background-color: goldenrod;
+  /* background-color: $bcolor_subtitulo; */
+  color: gold;
 }
 main .conocenos p {
   font-size: x-large;
@@ -116,9 +131,20 @@ main .conocenos p {
 }
 main .mapas {
   margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 main .beneficios {
-  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 main .beneficios img {
   height: 170px;
@@ -133,11 +159,13 @@ main .beneficios img {
 }
 
 .titulo_maps, .titulo_beneficios {
-  background-color: goldenrod;
+  /* background-color: $bcolor_subtitulo; */
+  color: gold;
 }
 
 .titulo_beneficios {
   background-color: brown;
+  color: white;
 }
 
 main.login {
@@ -249,20 +277,12 @@ main.login section .promociones_login .img4_login {
   grid-row: 3/4;
 }
 
-cssCopiar código footer .box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  transition: width 0.5s ease, background-color 1s ease;
-}
-
-.box:hover {
-  width: 200px;
-  background-color: blue;
-}
-
 body {
-  background-image: url(../imagenes/sala.jpg);
+  /*  background-image: url(../imagenes/sala.jpg);
+
+  */
+  /* background: linear-gradient */
+  background: radial-gradient(rgb(2, 2, 2), transparent), url(../imagenes/sala.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;

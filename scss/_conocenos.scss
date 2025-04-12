@@ -17,7 +17,8 @@ main {
         h2 {
             font-size: xx-large;
             font-weight: 800;
-            background-color: $bcolor_subtitulo;
+            /* background-color: $bcolor_subtitulo; */
+            color: gold;
         }
 
         p {
@@ -30,10 +31,22 @@ main {
 
     .mapas {
         margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;  
+        align-items: center;   
+        gap: 10px;  
+
     }
 
     .beneficios {
-        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;  
+        align-items: center;  
+        gap: 20px; 
         img {
             height: 170px;
         }
@@ -50,10 +63,12 @@ main {
 
 .titulo_maps {
     @extend .titulo_maps;
-    background-color: $bcolor_subtitulo;
+    /* background-color: $bcolor_subtitulo; */
+    color: gold
 }
 
 .titulo_beneficios {
     @extend .titulo_maps;
     background-color: $bcolor;
+    color: $color_letra;
 }

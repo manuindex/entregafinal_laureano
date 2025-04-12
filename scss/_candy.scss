@@ -1,6 +1,7 @@
 $fuente: Montserrat;
 $bcolor_subtitulo: goldenrod;
 $color_letra: white;
+
 ul li a.under_candy {
     color: rgb(49, 49, 49);
 }
@@ -8,7 +9,7 @@ ul li a.under_candy {
 /*vamos a darle estilos a candy.index*/
 main {
     .promo {
-        
+
         h2 {
             font-family: $fuente;
             font-size: xx-large;
@@ -16,30 +17,50 @@ main {
             color: $color_letra;
             background-color: $bcolor_subtitulo;
             text-align: center;
-             
+
         }
-        .combos_promo img {
-            height: 200px;
-            margin-bottom: 10px;
+
+        .combos_promo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+
+            img {
+
+                height: 200px;
+                margin-bottom: 10px;
+            }
         }
+
     }
 
     .candy {
-        
-        .candy_promos img {
-            height: 200px;
-            margin-top: 10px;
-            margin-bottom: 10px;
+
+        .candy_promos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 15px;
+            margin-left: 120px;
+
+            img {
+                height: 200px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
         }
-         h2 {
+
+        h2 {
             font-family: $fuente;
-           font-size: xx-large;
+            font-size: xx-large;
             font-weight: 800;
             color: $color_letra;
             background-color: $bcolor_subtitulo;
             text-align: center;
-            
-             
+
+
         }
     }
 }
