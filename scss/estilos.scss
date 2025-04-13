@@ -24,11 +24,7 @@ $rojo_letra: rgb(192, 66, 66);
 }
 
 body {
-    /*  background-image: url(../imagenes/sala.jpg);
-    
- */
-    /* background: linear-gradient */
-    background: radial-gradient( rgba(2, 2, 2, 2), transparent), url(../imagenes/sala.jpg);
+    background: radial-gradient(rgba(2, 2, 2, 3.5), transparent), url(../imagenes/sala.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -120,15 +116,17 @@ main {
         color: $color_letra;
         background-color: $bcolor_subtitulo;
         width: 300px;
-        font-family: $bcolor;
+        font-family: $fuente;
         font-size: 25px;
         font-weight: 700;
         margin: 12px;
+        margin-left: 50px;
     }
 
     .prox_estrenos {
-        margin-left: 3px;
+        @include flex(row, center, center);
         margin-bottom: 10px;
+        gap: 10px;
     }
 }
 
@@ -180,6 +178,8 @@ footer {
     /* media para  el index*/
     /*mpdificando el header para que entre en una tablet*/
     .header_mio {
+        margin-bottom: 10px;
+
         h1 {
             width: 280px;
         }
@@ -200,14 +200,19 @@ footer {
         a .login {
             margin-right: 20px;
         }
+
     }
 
     main {
+        .carousel {
+            margin-bottom: 25px;
+        }
+
         .h2_index {
             padding: 10px;
-            margin-left: 28px;
-            margin-bottom: 0;
+            margin-left: 30%;
             display: inline;
+
         }
 
         .prox_estrenos {
@@ -281,9 +286,12 @@ footer {
 
         h4 {
             text-align: center;
-            background-color: $color_letra;
             justify-content: center;
             width: 200px;
+        }
+
+        img {
+            height: 300px;
         }
     }
 
@@ -312,33 +320,35 @@ footer {
     /*media para candy*/
     main {
         .promo {
-            margin-left: 10%;
 
-            h2 {
-                width: 550px;
-                padding: 10px;
-                margin: 20px;
+            .combos_promo {
+                flex-direction: column;
+
+                img {
+                    height: 250px
+                }
             }
 
-            img {
-                margin-left: 140px;
-                height: 350px;
+            h2 {
+                flex-direction: column;
             }
         }
 
         .candy {
-            margin-left: 10%;
+
+            .candy_promos {
+                flex-direction: column;
+                margin: 0%;
+
+                img {
+                    height: 250px
+                }
+            }
 
             h2 {
-                width: 550px;
-                padding: 10px;
-                margin: 20px;
+                flex-direction: column;
             }
 
-            img {
-                margin-left: 140px;
-                height: 350px;
-            }
         }
     }
 
@@ -346,13 +356,11 @@ footer {
     /*media para conocenos*/
     main {
         .conocenos {
-            margin: 10px;
+            flex-direction: column;
         }
 
         .mapas {
-            display: flex;
-            display: block;
-            margin-left: 120px;
+            flex-direction: column;
 
             iframe {
                 margin-bottom: 15px;
@@ -361,14 +369,16 @@ footer {
         }
 
         .beneficios {
-            margin-left: 10%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            img {
+                height: 200px;
+            }
         }
     }
 
-}
-
-.fixed-top {
-    display: none;
 }
 
 /*media para un telefono*/
@@ -442,8 +452,29 @@ footer {
     }
 
     /*index*/
-    .carousel.slide {
-        margin-bottom: 20px;
+
+    main {
+        .carousel {
+            margin-bottom: 20px;
+            height: 210px;
+
+            img {
+
+                height: 190px;
+            }
+        }
+
+        .h2_index {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 40%;
+            background-color: n;
+        }
+        .prox_estrenos{
+            margin-top: 5px;
+        }
     }
 
     footer .contenido_footer {

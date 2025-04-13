@@ -1,5 +1,5 @@
 $fuente: Montserrat;
-$bcolor_subtitulo: goldenrod;
+$bcolor_subtitulo: gold;
 $color_letra: white;
 
 ul li a.under_candy {
@@ -14,9 +14,9 @@ main {
             font-family: $fuente;
             font-size: xx-large;
             font-weight: 800;
-            color: $color_letra;
-            background-color: $bcolor_subtitulo;
+            color: $bcolor_subtitulo;
             text-align: center;
+            margin-top: 20px;
 
         }
 
@@ -43,7 +43,7 @@ main {
             justify-content: flex-start;
             align-items: center;
             gap: 15px;
-            margin-left: 120px;
+            margin-left: 9%;
 
             img {
                 height: 200px;
@@ -56,8 +56,7 @@ main {
             font-family: $fuente;
             font-size: xx-large;
             font-weight: 800;
-            color: $color_letra;
-            background-color: $bcolor_subtitulo;
+            color: $bcolor_subtitulo;
             text-align: center;
 
 

@@ -1,6 +1,6 @@
 $fuente: Montserrat;
 $bcolor: brown;
-$bcolor_subtitulo: goldenrod;
+$bcolor_subtitulo: gold;
 $color_letra: white;
 /*vamos a darle estilos a conocenos.index*/
 ul li a.under_conocenos {
@@ -17,8 +17,7 @@ main {
         h2 {
             font-size: xx-large;
             font-weight: 800;
-            /* background-color: $bcolor_subtitulo; */
-            color: gold;
+            color: $bcolor_subtitulo;
         }
 
         p {
@@ -56,15 +55,13 @@ main {
 .titulo_maps {
     text-align: center;
     font-family: $fuente;
-    color: $color_letra;
     font-size: xx-large;
     font-weight: 800;
 }
 
 .titulo_maps {
     @extend .titulo_maps;
-    /* background-color: $bcolor_subtitulo; */
-    color: gold
+    color: $bcolor_subtitulo;
 }
 
 .titulo_beneficios {

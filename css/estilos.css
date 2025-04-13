@@ -24,8 +24,11 @@ ul li a.under_cartelera {
 
 h4 {
   text-align: center;
-  background-color: white;
+  color: white;
   width: 200px;
+  font-size: large;
+  font-weight: 800;
+  margin-top: 5px;
   justify-content: center;
 }
 
@@ -39,7 +42,7 @@ main .peliculas {
   flex-direction: row;
   justify-content: none;
   align-items: center;
-  margin-left: 140px;
+  margin-left: 200px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -71,9 +74,9 @@ main .promo h2 {
   font-family: Montserrat;
   font-size: xx-large;
   font-weight: 800;
-  color: white;
-  background-color: goldenrod;
+  color: gold;
   text-align: center;
+  margin-top: 20px;
 }
 main .promo .combos_promo {
   display: flex;
@@ -91,7 +94,7 @@ main .candy .candy_promos {
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
-  margin-left: 120px;
+  margin-left: 9%;
 }
 main .candy .candy_promos img {
   height: 200px;
@@ -102,8 +105,7 @@ main .candy h2 {
   font-family: Montserrat;
   font-size: xx-large;
   font-weight: 800;
-  color: white;
-  background-color: goldenrod;
+  color: gold;
   text-align: center;
 }
 
@@ -121,7 +123,6 @@ main .conocenos {
 main .conocenos h2 {
   font-size: xx-large;
   font-weight: 800;
-  /* background-color: $bcolor_subtitulo; */
   color: gold;
 }
 main .conocenos p {
@@ -153,13 +154,11 @@ main .beneficios img {
 .titulo_maps, .titulo_beneficios {
   text-align: center;
   font-family: Montserrat;
-  color: white;
   font-size: xx-large;
   font-weight: 800;
 }
 
 .titulo_maps, .titulo_beneficios {
-  /* background-color: $bcolor_subtitulo; */
   color: gold;
 }
 
@@ -278,10 +277,6 @@ main.login section .promociones_login .img4_login {
 }
 
 body {
-  /*  background-image: url(../imagenes/sala.jpg);
-
-  */
-  /* background: linear-gradient */
   background: radial-gradient(rgb(2, 2, 2), transparent), url(../imagenes/sala.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -369,14 +364,19 @@ main .h2_index {
   color: white;
   background-color: goldenrod;
   width: 300px;
-  font-family: brown;
+  font-family: Montserrat;
   font-size: 25px;
   font-weight: 700;
   margin: 12px;
+  margin-left: 50px;
 }
 main .prox_estrenos {
-  margin-left: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 10px;
+  gap: 10px;
 }
 
 footer {
@@ -422,6 +422,9 @@ footer .contenido_footer .iconos_sociales p {
 @media screen and (max-width: 1024px) {
   /* media para  el index*/
   /*mpdificando el header para que entre en una tablet*/
+  .header_mio {
+    margin-bottom: 10px;
+  }
   .header_mio h1 {
     width: 280px;
   }
@@ -438,10 +441,12 @@ footer .contenido_footer .iconos_sociales p {
   .header_mio a .login {
     margin-right: 20px;
   }
+  main .carousel {
+    margin-bottom: 25px;
+  }
   main .h2_index {
     padding: 10px;
-    margin-left: 28px;
-    margin-bottom: 0;
+    margin-left: 30%;
     display: inline;
   }
   main .prox_estrenos {
@@ -507,9 +512,11 @@ footer .contenido_footer .iconos_sociales p {
   }
   .imagenes_cartelera h4 {
     text-align: center;
-    background-color: white;
     justify-content: center;
     width: 200px;
+  }
+  .imagenes_cartelera img {
+    height: 300px;
   }
   /*formato media para trialers*/
   main .peliculas {
@@ -527,51 +534,45 @@ footer .contenido_footer .iconos_sociales p {
     width: 560px;
   }
   /*media para candy*/
-  main .promo {
-    margin-left: 10%;
+  main .promo .combos_promo {
+    flex-direction: column;
+  }
+  main .promo .combos_promo img {
+    height: 250px;
   }
   main .promo h2 {
-    width: 550px;
-    padding: 10px;
-    margin: 20px;
+    flex-direction: column;
   }
-  main .promo img {
-    margin-left: 140px;
-    height: 350px;
+  main .candy .candy_promos {
+    flex-direction: column;
+    margin: 0%;
   }
-  main .candy {
-    margin-left: 10%;
+  main .candy .candy_promos img {
+    height: 250px;
   }
   main .candy h2 {
-    width: 550px;
-    padding: 10px;
-    margin: 20px;
-  }
-  main .candy img {
-    margin-left: 140px;
-    height: 350px;
+    flex-direction: column;
   }
   /*media para conocenos*/
   main .conocenos {
-    margin: 10px;
+    flex-direction: column;
   }
   main .mapas {
-    display: flex;
-    display: block;
-    margin-left: 120px;
+    flex-direction: column;
   }
   main .mapas iframe {
     margin-bottom: 15px;
     margin-top: 10px;
   }
   main .beneficios {
-    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  main .beneficios img {
+    height: 200px;
   }
 }
-.fixed-top {
-  display: none;
-}
-
 /*media para un telefono*/
 @media screen and (max-width: 768px) {
   header .header_mio {
@@ -624,8 +625,23 @@ footer .contenido_footer .iconos_sociales p {
     color: white;
   }
   /*index*/
-  .carousel.slide {
+  main .carousel {
     margin-bottom: 20px;
+    height: 210px;
+  }
+  main .carousel img {
+    height: 190px;
+  }
+  main .h2_index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    background-color: n;
+  }
+  main .prox_estrenos {
+    margin-top: 5px;
   }
   footer .contenido_footer {
     display: flex;
