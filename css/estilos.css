@@ -689,24 +689,24 @@ footer .contenido_footer .iconos_sociales p {
     align-items: center;
     justify-content: center;
     margin-left: 0%;
-    max-width: 100%;
   }
   main .peliculas iframe {
+    margin-left: 10px;
     margin-top: 10px;
     width: 350px;
   }
   main .peliculas .peliculas_texto {
-    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   main .peliculas .peliculas_texto h2 {
     width: 320px;
-    margin-left: 30px;
     margin-top: 10px;
     margin-bottom: 0%;
   }
   main .peliculas .peliculas_texto p {
     width: 320px;
-    margin-left: 30px;
   }
   /*dando estilo a candy.index*/
   main .promo {
