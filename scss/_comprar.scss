@@ -1,0 +1,223 @@
+.cartelera_opciones.comprar {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 40px;
+}
+
+.horarios {
+    margin-bottom: 15px;
+    margin-left: 40px;
+    text-align: start;
+
+    h2 {
+        font-size: 28px;
+        font-weight: 800;
+        margin-bottom: 15px;
+        width: 300px;
+        color: rgba(214, 185, 16, 0.966);
+
+    }
+
+    .horarios_opciones {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .hora_btn {
+            padding: 10px 20px;
+            background-color: #eee;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .hora_btn:hover {
+            background-color: #fbff2b;
+        }
+    }
+}
+
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 40px;
+
+
+    /* Sección de butacas */
+    .butacas {
+        flex: 1;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        width: 50%;
+        height: 40%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        h1 {
+            color: rgba(214, 184, 16, 0.973);
+            text-align: center;
+            font-size: 25px;
+            font-weight: 800;
+        }
+
+        .pantalla {
+            background-color: #ccc;
+            height: 50px;
+            margin: 20px 0;
+            border-radius: 5px;
+            line-height: 50px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .filas {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+
+
+            .silla {
+                width: 30px;
+                height: 30px;
+                background-color: #444;
+                margin: 5px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+            .silla.ocupada {
+                background-color: #999;
+                cursor: not-allowed;
+            }
+
+            .silla:hover {
+                background-color: #fbff2b;
+            }
+
+
+        }
+
+        .mapa_pagar {
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+                flex-direction: column;
+                text-align: center;
+                font-size: 20px;
+                font-weight: 600;
+                color: brown;
+            }
+
+            .mapa1 {
+                flex-direction: column;
+                width: 100%;
+                height: 250px;
+                border-radius: 6px;
+                border: none;
+            }
+        }
+
+    }
+
+    /* Sección de formulario y resumen */
+    .form_pagar {
+        flex: 1;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        width: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        .info_compra {
+            h2 {
+                font-size: 25px;
+                margin-bottom: 15px;
+                text-align: center;
+                color: rgba(214, 184, 16, 0.973);
+                font-weight: 800;
+            }
+
+            .grupo_fila {
+                display: flex;
+                gap: 10px;
+
+                .grupo {
+                    flex: 1;
+                }
+            }
+
+            .grupo {
+                margin-bottom: 15px;
+
+                label {
+                    display: block;
+                    margin-bottom: 5px;
+
+                }
+
+                input {
+                    width: 100%;
+                    padding: 8px;
+                    border-radius: 4px;
+                    border: 1px solid #ccc;
+                    font-size: 14px;
+                }
+            }
+
+            button[type="submit"] {
+                width: 100%;
+                padding: 10px;
+                background-color: #9b3333;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+
+            button[type="submit"]:hover {
+                background-color: #be4040;
+            }
+        }
+
+        /* Resumen de compra */
+        .resumen_compra {
+            margin-top: 30px;
+            border-top: 1px solid #000000;
+            padding-top: 20px;
+
+            h2 {
+                color: brown;
+                font-weight: 600;
+                font-size: 20px;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+
+            .resumen_info {
+                display: flex;
+                gap: 15px;
+                align-items: flex-start;
+
+                img {
+                    width: 150px;
+                    border-radius: 8px;
+                }
+
+                .items p {
+                    margin: 5px 0;
+                    font-size: 14px;
+                }
+            }
+        }
+
+    }
+
+}

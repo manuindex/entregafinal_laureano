@@ -23,6 +23,7 @@ main.login {
         box-shadow: 10px 14px 18px rgba(0, 0, 0, 0.1);
         border-radius: 5%;
         @include flex(column, center, center);
+
         .logo_login :hover {
             color: rgba(189, 199, 46, 0.521);
         }
@@ -38,16 +39,27 @@ main.login {
             }
         }
 
-        .opciones label {
-            display: block;
-            margin-top: 15px;
-            margin-bottom: 5px;
-            font-size: 25px;
-            font-weight: 500;
-            color: $color_letra;
+        .opciones {
+            label {
+                display: block;
+                margin-top: 15px;
+                margin-bottom: 5px;
+                font-size: 20px;
+                font-weight: 500;
+                color: $color_letra;
+            }
+            input {
+                width: 100%;
+                padding: 8px;
+                border-radius: 4px;
+                border: 1px solid #ccc;
+                font-size: 14px;
+            }
         }
 
+
         .check_label {
+            display: block;
             margin-top: 10px;
             margin-bottom: 10px;
             color: goldenrod;
@@ -127,4 +139,3 @@ main.login {
 
     }
 }
- 

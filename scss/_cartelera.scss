@@ -6,10 +6,53 @@ ul li a.under_cartelera {
 }
 
 .cartelera_opciones {
-    padding: 20px;
+    /* padding: 20px; */
+    margin-top: 15px;
     font-family: $fuente;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #444;
+    }
+
+    select {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        background-color: #fafafa;
+        font-size: 15px;
+        transition: border-color 0.3s ease;
+    }
+
+    select:focus {
+        outline: none;
+        border-color: #007bff;
+    }
+
+    input[type="submit"] {
+        padding: 12px;
+        background-color: brown;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #be4040;
+    }
+
 }
+
 
 .imagenes_cartelera {
 
@@ -27,5 +70,5 @@ h4 {
     font-weight: 800;
     margin-top: 5px;
     justify-content: center;
-    
+
 }
