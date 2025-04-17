@@ -295,7 +295,28 @@ footer {
             height: 300px;
         }
     }
+    /* dando estilos a comprar */
+    
+    .contenedor {
 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .butacas {
+            width: 650px;
+
+            .filas .silla {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        .form_pagar {
+            width: 650px;
+        }
+    }
     /*formato media para trialers*/
     main {
         .peliculas {
