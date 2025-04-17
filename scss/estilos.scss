@@ -415,17 +415,22 @@ footer {
         display: flex;
         position: static;
 
+
         .container-fluid {
             /*poner el fonde de color bronw*/
             background-color: $bcolor;
             padding-left: 0;
 
             .navbar-brand {
-                margin: 0%;
-                color: goldenrod;
-                background-color: #F8F9FA;
-                border-radius: 0;
-                padding: 15px;
+
+                padding: 10px 20px;
+                background-color: $bcolor_subtitulo;
+                color: $color_letra;
+                border: none;
+                border-radius: 5px;
+                font-weight: 700;
+                font-size: 15px;
+                cursor: pointer;
                 /*que el bootstrap quede arriba de todo para no dejar espacios*/
             }
 
@@ -450,7 +455,14 @@ footer {
                 }
 
             }
+
         }
+    }
+
+    .bg-body-tertiary {
+        /* queel  boder del bootstrap sea brown */
+        --bs-bg-opacity: 1;
+        background-color: brown !important;
     }
 
     /*index*/
@@ -504,25 +516,40 @@ footer {
     main.login {
         .formulario_completo {
             border-radius: 0%;
+            margin-bottom: 25px;
         }
 
         section {
             border-radius: 0%;
+            background-color: rgba(0, 0, 0, 0);
 
             .promociones_login {
                 display: block;
-                margin-bottom: 10px;
-            }
 
-            img {
-                margin-bottom: 10px
+                .h3_login {
+                    color: $color_letra;
+                }
+
+                img {
+                    margin-bottom: 15px
+                }
             }
         }
-
     }
 
 
     /*dandole estilo a cartelera.index*/
+    .cartelera_opciones form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 15px;
+
+        select {
+            margin-bottom: 5px;
+        }
+
+    }
 
     .imagenes_cartelera {
         @include flex(column, center, center);
@@ -532,6 +559,57 @@ footer {
         }
 
     }
+
+    /* dando estilos a comprar */
+    main {
+
+        .cartelera_opciones form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 15px;
+
+
+
+        }
+
+        .horarios {
+            margin-left: 0%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .horarios_opciones {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-left: 0%;
+            }
+
+        }
+
+        .contenedor {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .butacas {
+                width: 130%;
+
+                .filas .silla {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            .form_pagar {
+                width: 130%;
+            }
+        }
+    }
+
 
     /*estilo a trilers*/
     main .peliculas {
@@ -552,7 +630,7 @@ footer {
             display: flex;
             flex-direction: column;
             align-items: center;
-           
+
 
             h2 {
                 width: 320px;
