@@ -122,6 +122,12 @@ main .promo .combos_promo {
 main .promo .combos_promo img {
   height: 200px;
   margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+main .promo .combos_promo img:hover {
+  transform: scale(1.2);
 }
 main .candy .candy_promos {
   display: flex;
@@ -135,6 +141,12 @@ main .candy .candy_promos img {
   height: 200px;
   margin-top: 10px;
   margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+main .candy .candy_promos img:hover {
+  transform: scale(1.2);
 }
 main .candy h2 {
   font-family: Montserrat;
@@ -184,6 +196,12 @@ main .beneficios {
 }
 main .beneficios img {
   height: 170px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+main .beneficios img:hover {
+  transform: scale(1.2);
 }
 
 .titulo_maps, .titulo_beneficios {
@@ -306,26 +324,43 @@ main.login section .promociones_login .h3_login {
   text-align: center;
   margin-top: 10px;
 }
-main.login section .promociones_login .img1_login {
+main.login section .promociones_login .img1_login, main.login section .promociones_login .img4_login, main.login section .promociones_login .img3_login, main.login section .promociones_login .img2_login {
   grid-column: 1/2;
   grid-row: 2/3;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+main.login section .promociones_login .img1_login:hover, main.login section .promociones_login .img4_login:hover, main.login section .promociones_login .img3_login:hover, main.login section .promociones_login .img2_login:hover {
+  transform: scale(1.2);
 }
 main.login section .promociones_login .img2_login {
   grid-column: 1/2;
   grid-row: 3/4;
 }
+main.login section .promociones_login .img2_login:hover {
+  transform: scale(1.2);
+}
 main.login section .promociones_login .img3_login {
   grid-column: 2/3;
   grid-row: 2/3;
+}
+main.login section .promociones_login .img3_login:hover {
+  transform: scale(1.2);
 }
 main.login section .promociones_login .img4_login {
   grid-column: 2/3;
   grid-row: 3/4;
 }
+main.login section .promociones_login .img4_login:hover {
+  transform: scale(1.2);
+}
 
 .cartelera_opciones.comprar {
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
+  align-items: none;
   margin-left: 40px;
 }
 
@@ -367,22 +402,21 @@ main.login section .promociones_login .img4_login {
   /* Sección de butacas */
   /* Sección de formulario y resumen */
 }
-.contenedor .butacas {
+.contenedor .butacas, .contenedor .form_pagar {
   flex: 1;
   background: #ffffff;
   padding: 20px;
   border-radius: 8px;
   width: 50%;
-  height: 40%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.contenedor .butacas h1 {
+.contenedor .butacas h1, .contenedor .form_pagar h1 {
   color: rgba(214, 184, 16, 0.973);
   text-align: center;
   font-size: 25px;
   font-weight: 800;
 }
-.contenedor .butacas .pantalla {
+.contenedor .butacas .pantalla, .contenedor .form_pagar .pantalla {
   background-color: #ccc;
   height: 50px;
   margin: 20px 0;
@@ -391,12 +425,12 @@ main.login section .promociones_login .img4_login {
   text-align: center;
   font-weight: bold;
 }
-.contenedor .butacas .filas {
+.contenedor .butacas .filas, .contenedor .form_pagar .filas {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
 }
-.contenedor .butacas .filas .silla {
+.contenedor .butacas .filas .silla, .contenedor .form_pagar .filas .silla {
   width: 30px;
   height: 30px;
   background-color: #444;
@@ -405,25 +439,25 @@ main.login section .promociones_login .img4_login {
   cursor: pointer;
   transition: 0.3s;
 }
-.contenedor .butacas .filas .silla.ocupada {
+.contenedor .butacas .filas .silla.ocupada, .contenedor .form_pagar .filas .silla.ocupada {
   background-color: #999;
   cursor: not-allowed;
 }
-.contenedor .butacas .filas .silla:hover {
+.contenedor .butacas .filas .silla:hover, .contenedor .form_pagar .filas .silla:hover {
   background-color: #fbff2b;
 }
-.contenedor .butacas .mapa_pagar {
+.contenedor .butacas .mapa_pagar, .contenedor .form_pagar .mapa_pagar {
   display: flex;
   flex-direction: column;
 }
-.contenedor .butacas .mapa_pagar h3 {
+.contenedor .butacas .mapa_pagar h3, .contenedor .form_pagar .mapa_pagar h3 {
   flex-direction: column;
   text-align: center;
   font-size: 20px;
   font-weight: 600;
   color: brown;
 }
-.contenedor .butacas .mapa_pagar .mapa1 {
+.contenedor .butacas .mapa_pagar .mapa1, .contenedor .form_pagar .mapa_pagar .mapa1 {
   flex-direction: column;
   width: 100%;
   height: 250px;
@@ -431,12 +465,6 @@ main.login section .promociones_login .img4_login {
   border: none;
 }
 .contenedor .form_pagar {
-  flex: 1;
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  width: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   /* Resumen de compra */
 }
 .contenedor .form_pagar .info_compra h2 {
@@ -497,6 +525,9 @@ main.login section .promociones_login .img4_login {
   display: flex;
   gap: 15px;
   align-items: flex-start;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 12px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
 }
 .contenedor .form_pagar .resumen_compra .resumen_info img {
   width: 150px;
@@ -505,6 +536,9 @@ main.login section .promociones_login .img4_login {
 .contenedor .form_pagar .resumen_compra .resumen_info .items p {
   margin: 5px 0;
   font-size: 14px;
+}
+.contenedor .form_pagar .resumen_compra .resumen_info:hover {
+  transform: scale(1.1);
 }
 
 body {
@@ -756,10 +790,10 @@ footer .contenido_footer .iconos_sociales p {
     align-items: center;
     justify-content: center;
   }
-  .contenedor .butacas {
+  .contenedor .butacas, .contenedor .form_pagar {
     width: 650px;
   }
-  .contenedor .butacas .filas .silla {
+  .contenedor .butacas .filas .silla, .contenedor .form_pagar .filas .silla {
     width: 20px;
     height: 20px;
   }
@@ -976,10 +1010,10 @@ footer .contenido_footer .iconos_sociales p {
     align-items: center;
     justify-content: center;
   }
-  main .contenedor .butacas {
+  main .contenedor .butacas, main .contenedor .form_pagar {
     width: 130%;
   }
-  main .contenedor .butacas .filas .silla {
+  main .contenedor .butacas .filas .silla, main .contenedor .form_pagar .filas .silla {
     width: 20px;
     height: 20px;
   }

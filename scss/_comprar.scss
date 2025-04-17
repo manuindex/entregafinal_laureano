@@ -1,6 +1,16 @@
-.cartelera_opciones.comprar {
+$color_letra: white;
+$fuente: Montserrat;
+$hover: #fbff2b;
+
+@mixin flex ($direction, $jcontent, $aitems) {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: $direction;
+    justify-content: $jcontent;
+    align-items: $aitems;
+}
+
+.cartelera_opciones.comprar {
+    @include flex(row, flex-start, none);
     margin-left: 40px;
 }
 
@@ -34,7 +44,7 @@
         }
 
         .hora_btn:hover {
-            background-color: #fbff2b;
+            background-color: $hover;
         }
     }
 }
@@ -54,7 +64,6 @@
         padding: 20px;
         border-radius: 8px;
         width: 50%;
-        height: 40%;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
         h1 {
@@ -127,12 +136,8 @@
 
     /* Sección de formulario y resumen */
     .form_pagar {
-        flex: 1;
-        background: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        width: 50%;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        @extend .butacas;
 
         .info_compra {
             h2 {
@@ -205,16 +210,25 @@
                 display: flex;
                 gap: 15px;
                 align-items: flex-start;
+                transition: transform 0.3s ease-in-out;
+                border-radius: 12px;
+                /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+                
 
                 img {
                     width: 150px;
                     border-radius: 8px;
+                    
                 }
 
                 .items p {
                     margin: 5px 0;
                     font-size: 14px;
                 }
+            }
+            .resumen_info:hover {
+                transform: scale(1.1);
+
             }
         }
 

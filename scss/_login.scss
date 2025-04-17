@@ -32,7 +32,8 @@ main.login {
             margin-bottom: 10px;
             @include flex(row, none, center);
             gap: 20px;
-            h3{
+
+            h3 {
                 font-weight: 600;
                 text-align: start;
             }
@@ -40,6 +41,7 @@ main.login {
             img {
                 height: auto;
                 width: 60px;
+
             }
         }
 
@@ -52,6 +54,7 @@ main.login {
                 font-weight: 500;
                 color: $color_letra;
             }
+
             input {
                 width: 100%;
                 padding: 8px;
@@ -106,6 +109,7 @@ main.login {
                 width: 100%;
                 /* Hace que las imágenes ocupen todo el ancho disponible */
                 height: auto;
+
                 /* Mantiene la proporción de las imágenes */
             }
 
@@ -123,22 +127,49 @@ main.login {
             .img1_login {
                 grid-column: 1/2;
                 grid-row: 2/3;
+                transition: transform 0.3s ease-in-out;
+                border-radius: 12px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            .img1_login:hover {
+                transform: scale(1.2);
+
             }
 
             .img2_login {
+                @extend.img1_login;
                 grid-column: 1/2;
                 grid-row: 3/4;
+            }
+
+            .img2_login:hover {
+                transform: scale(1.2);
+
             }
 
             .img3_login {
                 grid-column: 2/3;
                 grid-row: 2/3;
+                @extend.img1_login;
+            }
+
+            .img3_login:hover {
+                transform: scale(1.2);
+
             }
 
             .img4_login {
                 grid-column: 2/3;
                 grid-row: 3/4;
+                @extend.img1_login;
             }
+
+            .img4_login:hover {
+                transform: scale(1.2);
+
+            }
+
         }
 
     }

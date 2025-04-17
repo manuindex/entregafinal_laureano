@@ -30,8 +30,16 @@ main {
 
                 height: 200px;
                 margin-bottom: 10px;
+                transition: transform 0.3s ease-in-out;
+                border-radius: 12px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            img:hover {
+                transform: scale(1.2);
             }
         }
+
 
     }
 
@@ -49,6 +57,13 @@ main {
                 height: 200px;
                 margin-top: 10px;
                 margin-bottom: 10px;
+                transition: transform 0.3s ease-in-out;
+                border-radius: 12px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                
+            }
+            img:hover {
+                transform: scale(1.2);
             }
         }
 
